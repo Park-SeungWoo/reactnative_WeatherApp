@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "wea2app",
-    "slug": "wea2app",
-    "version": "1.0.0",
+    "name": "Weather",
+    "slug": "weather_info",
+    "version": "10.5.3",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon1.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/splash1.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -17,10 +17,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.parkseungwoo.weather",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.parkseungwoo.weather",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }
