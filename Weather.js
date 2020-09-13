@@ -86,7 +86,7 @@ const WeatherCases = {
     }
 };
 
-const API_KEY = '3689f4e1dfc2f163ec7c300a6e9496fe';
+const API_KEY = 'API_KEY';
 
 // const _RefreshButton = () => {
 //     // console.log('refresh');
