@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Platform } from 'react-native';
 import Weather from './Weather';
 import {LinearGradient} from 'expo-linear-gradient';
 
-const API_KEY = '3689f4e1dfc2f163ec7c300a6e9496fe';
+const API_KEY = '';
 
 export default class App extends Component {
   state = {
