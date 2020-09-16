@@ -41,7 +41,7 @@ export default class App extends Component {
     const { isloded, err, temperature, weathername, InfoJson } = this.state;
     return (
       <View style={styles.container}>
-        {isloded ? (
+        {isloded ? (// 여기서 리프레쉬 사용해서 위에서 아래로 스크롤하면 api정보 다시 받아올 수 있게 만들기
           <Weather weathernames={weathername} temp={temperature} infos={InfoJson} />
         ) : (
           <LinearGradient style={styles.Loading} colors={['lightblue', 'lightpink']}>
