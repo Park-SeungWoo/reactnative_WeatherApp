@@ -2,7 +2,7 @@
   "expo": {
     "name": "Weather",
     "slug": "weather_info",
-    "version": "10.5.3",
+    "version": "11.5.3",
     "orientation": "portrait",
     "icon": "./assets/icon1.png",
     "splash": {
@@ -28,6 +28,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "description": "add refresh function"
   }
 }
