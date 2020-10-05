@@ -14,9 +14,7 @@ import PropTypes from 'prop-types';
 import { LinearGradient } from 'expo-linear-gradient';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
-
 const { width } = Dimensions.get('window');
-
 const DateCases = {
   1: '월요일',
   2: '화요일',
@@ -26,20 +24,17 @@ const DateCases = {
   6: '토요일',
   0: '일요일',
 };
-
 let curdate = new Date();
 let day = String(curdate.getDate());
 let month = String(curdate.getMonth() + 1);
 let year = String(curdate.getFullYear());
 let hour = String(curdate.getHours());
 let date = String(curdate.getDay());
-
 Weather.propTypes = {
   weathernames: PropTypes.string,
   temp: PropTypes.number.isRequired,
   infos: PropTypes.object.isRequired,
 };
-
 const WeatherCases = {
   Rain: {
     colors: ['lightblue', '#005BEA'],
@@ -90,7 +85,6 @@ const WeatherCases = {
     icon: 'weather-hazy',
   },
 };
-
 function Weather({ weathernames, temp, infos }) {
   return (
     <LinearGradient style={styles.container} colors={WeatherCases[weathernames].colors}>
@@ -222,9 +216,7 @@ function Weather({ weathernames, temp, infos }) {
   );
 }
 // 체감온도, 습도, 최고 온도, 최저 온도, 지역
-
 export default Weather;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

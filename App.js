@@ -13,7 +13,6 @@ import Weather from './Weather';
 import { LinearGradient } from 'expo-linear-gradient';
 
 const API_KEY = 'KEY';
-
 const pheight = Dimensions.get('window').height;
 const pwidth = Dimensions.get('window').width;
 
@@ -31,7 +30,6 @@ export default class App extends Component {
   componentDidMount() {
     this._getPosition();
   }
-
   _getPosition = () => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -48,7 +46,6 @@ export default class App extends Component {
       }
     );
   };
-
   _GetWeather = async () => {
     await fetch(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${this.state.lat}&lon=${this.state.long}&exclude={minutely}&appid=${API_KEY}&lang={kr}`
@@ -64,7 +61,6 @@ export default class App extends Component {
         });
       });
   };
-
   _Refreshbtn = () => {
     this.setState({
       isloded: false,
@@ -72,7 +68,6 @@ export default class App extends Component {
     });
     this._Refreshfunc();
   };
-
   _Refreshfunc = () => {
     navigator.geolocation.getCurrentPosition((position) => {
       this.setState({
@@ -95,7 +90,6 @@ export default class App extends Component {
         });
     });
   };
-
   render() {
     const { isloded, err, temperature, weathername, InfoJson, refresh } = this.state;
     return (
@@ -121,7 +115,6 @@ export default class App extends Component {
     );
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
